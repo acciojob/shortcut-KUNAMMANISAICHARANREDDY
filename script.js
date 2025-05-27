@@ -1,6 +1,15 @@
 function shortcut(s1, s2) {
-  // your code here
+  const s11 = s1.charAt(0);
+  const s22 = s2.charAt(0);
+
+  if (s11 === ' ' || s22 === ' ') {
+    return ' ';
+  }
+
+  return s11 + s22;
 }
+
+
 
 // Do not change the code below.
 const s1 = prompt("Enter s1:");
